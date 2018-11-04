@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0px 100px 0px 100px;
+    border-bottom: 1px solid #494848;
+    background: #f4f4f4;
+}
+
+nav ul {
+    display: flex;
+   list-style: none;
+   margin-top:auto;
+   margin-bottom:auto;
+   padding: 0px;
+}
+nav ul li .btnText{
+    text-decoration: none;
+    background: #fff;
+    color: #c0c0c0;
+    margin-left: 15px;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+}
+nav ul li .btnText:hover {
+    background: #87F340;
+    color: #fff;
+}
+nav ul li a.current {
+    background: #87F340;
+    color: #fff;
+}
+aside {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #242323;
+    transition: 0.5s all ease-in-out;
+    color: #fff;
+}
+
+aside div {
+    display: flex;
+}
+.toggleBtn {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    background: #242323;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    color:  #fff;
+    transition: 0.5s ease-in-out;
+}
+.toggleBtn.push {
+    left: 290px;
+}
+aside.active {
+    left: 0px;
+}
+aside form {
+    min-width: 90%;
+    margin: auto;
+}
+aside form input {
+    width: 95%;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+aside form .btn {
+    display: block;
+    width: 60%;
+    margin-top: 10px;
+    padding: 8px 28px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 0%;
+    background: #87F340;
+    color: #fff;
+}
+aside ul {
+    list-style: none;
+    margin-top: 100px;
+}
+aside ul li .btnText{
+    width: 100%;
+    text-decoration: none;
+    background: none;
+    border: none;
+    margin-top: 5px;
+    margin-left: 0px;
+    padding: 10px 10px;
+    display: block;
+    color: #fff;
+    transition: .5s ease-in-out
+}
+aside ul li .btnText:hover {
+    background: #87F340;
+}
+aside ul li .btnText.current {
+    background: #87F340;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    float: right;
+    transition: 0.5s;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #bbb8b8;
+}
+.article .thumb img {
+    width: 100px;
+    height: 100px;
+}
+.article .thumb {
+    display: flex;
+}
+.article .thumb small {
+    margin-left: 50px;
+}
+.article a{
+    background: #87F340;
+    padding: 8px 22px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+}
+
+#interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    background: #E3DEDE;
+    margin-top: 0px;
+}
+.interest {
+    background: #fff;
+}
+.interest-head {
+    border-bottom: 1px solid #707070;
+}
+.interest {
+    padding: 20px 20px;
+}
+.interest img {
+    width: 100%;
+}
+.interest a{
+    background: #87F340;
+    padding: 8px 22px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #494848;
+    color: #fff;
+    padding: 20px 20px;
+}
+footer a {
+    color: #fff;
+}
+footer .sources {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0rem 2rem;
+}
+.banner {
+    display: grid;
+    place-content: center;
+    background: #242323;
+    color: #fff;
+}
+
+
+
+@media(max-width: 900px){
+    h1,h2,h3 {
+        font-size: 18px
+    }
+    nav ul {
+        display: none;
+    }
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+}
+
+@media(max-width: 768px){
+    h1,h2,h3 {
+        font-size: 18px
+    }
+    nav ul {
+        display: none;
+    }
+    #main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        width: 60%;
+        margin: 10px auto;
+    }
+    #interests {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+    
+    footer .sources {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 0rem 2rem;
+    }
+}

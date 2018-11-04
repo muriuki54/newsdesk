@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Get all your favorite news from thousands of credible sources across 50 countries">
+    <meta name="keywords" content="news,sports,entertainment,business,breaking news">
+    <meta ame="author" content="Charles Muriuki" />
+    <title>Get your favorite news</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body id="body">
+        <div class="toggleBtn">
+        <i class="fa fa-chevron-left"></i>
+    </div>
+    <aside>
+        <h3>Search for a particular interest</h3>
+        <div>
+        <form id="form">
+            <input type="text" placeholder="Search for anything" id="interest">
+            <button type="submit" class="btn">Search</button>
+        </form>
+       
+        </div>
+        <ul>
+            <li><button class="btnText">Sports</button></li>
+            <li><button class="btnText">Business</button></li>
+            <li><button class="btnText">Technology</button></li>
+            <li><button class="btnText">Entertainment</button></li>
+            <li><button class="btnText">Science</button></li>
+            <li><button class="btnText">General</button></li>
+        </ul>
+    </aside>
+    <nav>
+        <div clas="brand">
+            <h2>news</h2>
+        </div>
+        <ul>
+            <li><button class="btnText">Sports</button></li>
+            <li><button class="btnText">Business</button></li>
+            <li><button class="btnText">Technology</button></li>
+            <li><button class="btnText">Entertainment</button></li>
+            <li><button class="btnText">Science</button></li>
+            <li><button class="btnText">General</button></li>
+        </ul>
+    </nav>
+    <div class="container">
+            <!-----WORLD NEWS --------->
+            <section id="main">
+      
+            </section> 
+            <!-----MY PREFERENCES --------->
+            <h1 style="text-align:center;background:#E3DEDE;padding: 10px;" class="interestHeader">My interests</h1>
+            <section id="interests">
+      
+            </section> 
+
+            <footer>
+
+                <div class="sources">
+                   <a href="https://BBC.com" target="_blank">BBC News</a>
+                   <a href="https://cnn.com" target="_blank">CNN</a> News</a>
+                   <a href="https://bleacherreport.com" target="_blank">Bleacher report</a>
+                   <a href="https://techsledge.com" target="_blank">TechSledge</a>
+                   <a href="https://Wired.com" target="_blank">Wired</a>
+                   <a href="https://medicalnewstoday.com" target="_blank">Medical News Today</a>
+                   <a href="https://nationalgeographic.com" target="_blank">National Geographic</a>
+                </div>
+                <div class="powered By">
+                    <p>Powered by <a href="https://newsapi.org" target="_blank">newsAPI.org</a></p>
+                    <p>Get a <a href="https://truewebguy.com" target="_blank">developer</a></p>
+                </div>
+            </footer>
+            <div class="banner">
+                <p>2018 news desk</p>
+            </div>
+    </div>
+    
+   <script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script src="./js/main.js"></script>
+   <script>
+    $('#form').on('submit',() => {
+            const interestHeader = $('.interestHeader').position().top;
+            $('html,body').animate({
+                scrollTop: interestHeader
+            },900)
+        });
+    </script>
+</body>
+</html>
