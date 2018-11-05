@@ -5,7 +5,7 @@ $(document).ready(() => {
     })
             //DEFAULT REQUESTS
             $.ajax({
-                url: 'https://newsapi.org/v2/top-headlines?category=general&pageSize=5&apiKey=b536b1c11c8840d3a2a219319ec7e1cb'
+                url: 'https://newsapi.org/v2/top-headlines?category=general&country=us&pageSize=5&apiKey=b536b1c11c8840d3a2a219319ec7e1cb'
             }).then((res) => {
                 console.log(res)
                 for(var i = 0;i < res.articles.length;i++){
