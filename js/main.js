@@ -13,6 +13,7 @@ $(document).ready(() => {
         
                     $('#main').append(`
                     <div class="article">
+                    <button id="closeBtn" onclick="this.parentElement.style.display = 'none';">&times;</button>
                     <h3 class="article-head">${article.title}</h3>
                     <div class="thumb">
                     <img src="${article.urlToImage}">
@@ -30,6 +31,12 @@ $(document).ready(() => {
             })
                         //END DEFAULT
                        
+
+            //Close Btn
+             function closeArticle() {
+                this.style.display = 'none';
+            }
+
 
      btnText = $('.btnText');
      for(var i = 0;i < btnText.length;i++){
@@ -50,6 +57,7 @@ $(document).ready(() => {
 
                     $('#main').append(`
                     <div class="article">
+                    <button id="closeBtn" onclick="this.parentElement.style.display = 'none';">&times;</button>
                     <h2 class="article-head">${article.title}</h2>
                     <div class="thumb">
                     <img src="${article.urlToImage}">
@@ -119,7 +127,7 @@ $(document).ready(() => {
                     
                     single = myInterest.articles
                     for(var i = 0;i < single.length;i++){
-                        console.log(single[i]);
+                        // console.log(single[i]);
                         singleInterest = single[i]
                     
                    $('#interests').append(`

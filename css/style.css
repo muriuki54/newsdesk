@@ -148,6 +148,29 @@ aside ul li .btnText.current {
     width: 90%;
     margin: 10px auto;
 }
+.article #closeBtn {
+    position: relative;
+    left: 90%;
+    top:5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    display: inline-block;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+    color: #f4f4f4;
+    cursor:pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.article #closeBtn:hover {
+    background: #87F340;
+    color: #fff;
+}
 
 .article {
     display: flex;
@@ -266,6 +289,7 @@ footer .sources {
         width: 95%;
         margin: 10px auto;
     }
+
     #interests {
         display: grid;
         grid-template-columns: 1fr;
@@ -276,5 +300,30 @@ footer .sources {
         display: grid;
         grid-template-columns:1fr;
         grid-gap: 0rem 2rem;
+    }
+}
+
+@media (max-width: 500px){
+    .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .article .thumb img {
+        width: 80%;
+        margin:auto;
+        padding: 10px;
+    }
+    .article .thumb {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-content: center;
+        width: 80%;
+        margin: 20px auto;
+    }
+    .article .content {
+        display: none;
     }
 }
