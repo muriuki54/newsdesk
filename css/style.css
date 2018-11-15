@@ -326,4 +326,7 @@ footer .sources {
     .article .content {
         display: none;
     }
+    .article #closeBtn {
+        left: 150px;
+    }
 }
